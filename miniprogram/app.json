@@ -1,25 +1,48 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/home/home",
+    "pages/comment/comment",
+    "pages/profile/profile",
+    "pages/map/map",
+    "pages/mymovie/mymovie",
+    "pages/movieDetail/movieDetail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "dimi",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#d1d1d1",
+    "selectedColor": "#333333",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "电影",
+        "iconPath": "images/01.png",
+        "selectedIconPath": "images/01_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "images/02.png",
+        "selectedIconPath": "images/02_active.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "images/03.png",
+        "selectedIconPath": "images/03_active.png"
+      },
+      {
+        "pagePath": "pages/mymovie/mymovie",
+        "text": "我喜欢",
+        "iconPath": "images/04_.png",
+        "selectedIconPath": "images/04_active.png"
+      }
+    ]
+  }
 }

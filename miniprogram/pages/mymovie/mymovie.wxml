@@ -1,0 +1,31 @@
+<!--miniprogram/pages/mymovie/mymovie.wxml-->
+<!-- <text>miniprogram/pages/mymovie/mymovie.wxml</text> -->
+<!-- 我喜欢的电影添加组件 -->
+<!--1. 电影名称：[] -->
+<view>
+  <van-field
+      value="{{ moviename }}"
+      placeholder="电影名称"
+      bind:change="onChangeMname"
+    />
+  <!-- 2.输入喜欢原因 -->
+  <text>写一点喜欢的原因</text>
+  <van-field
+      value="{{ content }}"
+      placeholder="请留言"
+      bind:change="onChangeContent"
+    />
+  <!-- 3.上传电影精彩画面【上传】 -->
+  <van-button type="info" size="large" bindtap="upload">
+  上传
+  </van-button>
+  <!--4. 图片预览区域 -->
+  <view class="imagelist">
+    <image  wx:for="{{images}}" src="{{item}}"                    wx:key="index" style="width:200rpx;height:200rpx">
+    </image>
+  </view>
+</view>
+<!--添加提交按钮  -->
+  <van-button type="default" size="large" bindtap="submit">提交</van-button>
+<!-- 添加电影列表显示按钮 -->
+  <van-button type="default" size="large" bind="jumpDetail">提交喜欢电影列表</van-button>
